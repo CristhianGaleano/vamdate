@@ -25,15 +25,7 @@
                                   El desarrollo de la misión institucional enmarcado en la filosofía de proyecto de
 vida y la formación académica, requiere del soporte y acompañamiento de los procesos administrativos.
                                </p>
-                               <p>
-                                Facultades, Vicerrectoría Académica. Admisiones
-                               </p>
-                                <p>
-                                <a href="https://www.ucp.edu.co/pregrado/">Oferta de Pregrados</a>
-                                </p>
-                               <p>
-                               <a href="https://www.ucp.edu.co/posgrado/">Oferta de Posgrados</a>
-                               </p>
+                             
                            </div>
                               
                            
