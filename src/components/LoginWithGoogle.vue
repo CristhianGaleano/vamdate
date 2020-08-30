@@ -10,7 +10,7 @@
                     <v-card>
                 <v-toolbar color="infoPublicidad">
                     <v-toolbar-title>
-                        La Vicerrectoría Académica
+                        Dirección Administrativa y Financiera
                     </v-toolbar-title>
                 </v-toolbar>
                 <!-- <v-card-text>
@@ -22,7 +22,8 @@
                        <div class="row">
                            <div class="col-md-12">
                                <p>
-                                  La Vicerrectoría Académica orienta su actuar a través del Proyecto Educativo a través de sus facultades y áreas administrativas que acompañar el quehacer formativo, investigativo y de proyección social.
+                                  El desarrollo de la misión institucional enmarcado en la filosofía de proyecto de
+vida y la formación académica, requiere del soporte y acompañamiento de los procesos administrativos.
                                </p>
                                <p>
                                 Facultades, Vicerrectoría Académica. Admisiones
@@ -136,7 +137,7 @@ export default {
                 }
 
 
-                await db.collection('usuariosvaca')
+                await db.collection('usuariosamdate')
                         .doc(uidCurrentUser)
                         .set(usuario)
                         .then(function() {
@@ -146,7 +147,7 @@ export default {
                         });
 
                   //  acces for document on BD
-                let doc = await db.collection('usuariosvaca')
+                let doc = await db.collection('usuariosamdate')
                                 .doc(uidCurrentUser)
                                 .get()
                                 console.log(doc);
@@ -158,7 +159,7 @@ export default {
                     this.enviarNotificacion('No se encontró la información del usuario', 'Error')
                 }
 
-                storage.ref('usuariosvaca/'+uidCurrentUser+'/photo.jpg')
+                storage.ref('usuariosamdate/'+uidCurrentUser+'/photo.jpg')
                 let task = storage.put(photoCurrentUser)
                 console.log("task: "+task);
             }

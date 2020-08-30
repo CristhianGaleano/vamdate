@@ -203,7 +203,7 @@ export default {
                 this.detenerChat()
             }
 
-            this.detenerChat = db.collection('contactosvaca')
+            this.detenerChat = db.collection('contactosamdate')
               .doc(this.cid)
               .collection('chat')
               .orderBy('fechaEnvio')
@@ -246,7 +246,7 @@ export default {
             let batch = db.batch()
 
             batch.update(
-                db.collection('contactosvaca')
+                db.collection('contactosamdate')
                     .doc(this.cid)
                     .collection('chat')
                     // id aleatorio
@@ -256,7 +256,7 @@ export default {
 
             //  se elimina pero lo hace al recibir msj, y el escuchador resta unidad
             batch.delete(
-                db.collection('usuariosvaca')
+                db.collection('usuariosamdate')
                     .doc(this.usuario.uid)
                     .collection('chat-sin-leer')
                     .doc(mensaje.mid)
@@ -269,7 +269,7 @@ export default {
         async consultarUsuarios () {
             try {
                 // Accede a la colección 'usuarios'
-                let docs = await db.collection('usuariosvaca')
+                let docs = await db.collection('usuariosamdate')
                                     .get()
                 // Como vamos a obtener todos los documentos entonces get()
                 // recorriendo cada documento
@@ -296,7 +296,7 @@ export default {
         // aqui lee los mensages sin leer y lo suma
         consultarChatSinLeer () {
             // user current
-            db.collection('usuariosvaca')
+            db.collection('usuariosamdate')
                 .doc(this.usuario.uid)
                 .collection('chat-sin-leer')
                 .orderBy('fechaEnvio')
@@ -347,14 +347,14 @@ export default {
                 // await para garantizar que la consulta termine antes de preguntar si el usuario existe
                 // Accede a la colección 'contactos
                 // obtiene el documento con el id en 'cid'
-                let doc = await db.collection('contactosvaca')
+                let doc = await db.collection('contactosamdate')
                             .doc(this.cid)
                             .get()
 
                 if(!doc.exists){
                 // si no existe entonces crea el documento
                     // creacion el documento 
-                    await db.collection('contactosvaca')
+                    await db.collection('contactosamdate')
                             .doc(this.cid)
                             .set({cid: this.cid})
                 }
@@ -388,7 +388,7 @@ export default {
             let batch = db.batch()
             // la lista del chat
             batch.set(
-                db.collection('contactosvaca')
+                db.collection('contactosamdate')
                         .doc(this.cid)
                         .collection('chat')
                         .doc(mid),
@@ -397,7 +397,7 @@ export default {
 
             // lista general
             batch.set(
-                db.collection('usuariosvaca')
+                db.collection('usuariosamdate')
                         .doc(this.usuarioSeleccionado.uid)
                         .collection('chat-sin-leer')
                         .doc(mid),
