@@ -5,7 +5,7 @@
 
     <v-container>
 
-        <v-layout row  wrap justify-center align-start style="height: 240px;">
+        <v-layout row  wrap justify-space-around align-center mx-1>
                 <v-flex lg5  mx-10>
                     <v-card>
                 <v-toolbar color="infoPublicidad">
@@ -21,12 +21,12 @@
                     <v-layout >
                        <div class="row">
                            <div class="col-md-12">
-                               <p>
+                               <p style="text-align: justify;">
                                   El desarrollo de la misión institucional enmarcado en la filosofía de proyecto de
 vida y la formación académica, requiere del soporte y acompañamiento de los procesos administrativos.
                                </p>
 
-                               <p>
+                               <p style="text-align: justify;">
                                    En este espacio estamos dispuestos a atender sus inquietudes, sugerencias y comentarios.  Contáctenos.
 
 
@@ -65,7 +65,7 @@ vida y la formación académica, requiere del soporte y acompañamiento de los p
                         <v-alert border="top" colored-border type="info" elevation="2">
                             <b> Horario de atención:</b> <br> 
                             Lunes a viernes de 8:00 a.m a 12:00 m. y 2:00 p.m. a 6:00 p.m <br>
-                            sábados: 8:00 a.m. a 12:00 m. Zona horararia: UTC-5
+                            Sábados: 8:00 a.m. a 12:00 m. <br> Zona horararia: UTC-5
                         </v-alert>
                     </div>
                     </v-layout>
