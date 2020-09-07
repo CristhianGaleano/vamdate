@@ -25,6 +25,13 @@
                                   El desarrollo de la misión institucional enmarcado en la filosofía de proyecto de
 vida y la formación académica, requiere del soporte y acompañamiento de los procesos administrativos.
                                </p>
+
+                               <p>
+                                   En este espacio estamos dispuestos a atender sus inquietudes, sugerencias y comentarios.  Contáctenos.
+
+
+                                   
+                               </p>
                              
                            </div>
                               

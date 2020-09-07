@@ -43,7 +43,7 @@
 
     <v-footer color="primary" dark>
       <v-layout justify-center>
-        <span> <strong>Universidad Católica de Pereira</strong> - Oficina de Comunicaciones - 2020</span>
+        <span> <strong>Universidad Católica de Pereira</strong> - Oficina de Comunicaciones</span>
       </v-layout>
     </v-footer>
 
