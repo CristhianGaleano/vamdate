@@ -32,7 +32,8 @@ var firebaseConfig = {
   const auth = firebase.auth()
   const db = firebase.firestore()
   const provider = new firebase.auth.GoogleAuthProvider()
+  const providerF = new firebase.auth.FacebookAuthProvider();
   const storage = firebase.storage()
 
   // exportando para poderlas utilizar en los componentes
-  export { auth, db, provider, storage }
+  export { auth, db, provider, providerF, storage }

@@ -64,13 +64,20 @@ vida y la formación académica, requiere del soporte y acompañamiento de los p
                          <div>
                         <v-alert border="top" colored-border type="info" elevation="2">
                             <b> Horario de atención:</b> <br> 
-                            Lunes a viernes de 8: 00 a.m - 12: 00m y 2:00 p.m. - 6:00 p.m <br>
-                            sábados: 8:00 a.m- 12:00 m.
+                            Lunes a viernes de 8:00 a.m a 12:00 m. y 2:00 p.m. a 6:00 p.m <br>
+                            sábados: 8:00 a.m. a 12:00 m. Zona horararia: UTC-5
                         </v-alert>
                     </div>
                     </v-layout>
                     <v-layout justify-end>
-                        <v-btn @click="ingresar" color="infoPublicidad">Inicia sesión con Google</v-btn>
+                        <v-btn @click="ingresar" class="mx-2" style="text-transform: none;" color="infoPublicidad">
+                             <v-icon class="mx-2" style="color: #fbbc05;">fab fa-google</v-icon>
+                            Inicia sesión con Google</v-btn>
+                    </v-layout>
+                    <v-layout justify-end mt-3>
+                        <v-btn class="mx-2" outline flat style="text-transform: none;" @click="ingresarF" color="infoPublicidad">
+                            <v-icon class="mx-2" style="color: #385898;">fab fa-facebook</v-icon>
+                            Inicia sesión con Facebook</v-btn>
                     </v-layout>
                 </v-card-text>
             </v-card>
@@ -89,7 +96,7 @@ vida y la formación académica, requiere del soporte y acompañamiento de los p
 
 <script>
 
-import {auth,provider,db,storage} from '@/firebase'
+import {auth,provider,providerF,db,storage} from '@/firebase'
 // import {auth, db} from '@/firebase'
 
 export default {
@@ -159,6 +166,67 @@ export default {
                 }
 
                 storage.ref('usuariosamd/'+uidCurrentUser+'/photo.jpg')
+                let task = storage.put(photoCurrentUser)
+                console.log("task: "+task);
+            }
+               
+        } catch (error) {
+            console.log("Ocurrio un error en login"+error)
+        }           
+            },
+                // Inicia sesion con facebook
+       async ingresarF () {
+        try {
+            await auth.signInWithPopup(providerF)
+
+
+            console.log("Facebook")
+            if(auth.currentUser){
+
+                console.log('Start record data user');
+                let uidCurrentUser = auth.currentUser.uid
+                let nameCurrentUser = auth.currentUser.displayName
+                let emailCurrentUser = auth.currentUser.email
+                let photoCurrentUser = auth.currentUser.photoURL
+                let lastSignInTime = auth.currentUser.metadata.lastSignInTime
+                console.log('UID: ' + uidCurrentUser);
+                console.log('Name: ' + nameCurrentUser);
+                console.log('email: ' + emailCurrentUser);
+                console.log('photo: ' + photoCurrentUser);
+                console.log('lastSignInTime: ' + lastSignInTime);
+
+                let usuario = {
+                    foto: photoCurrentUser,
+                    uid: uidCurrentUser,
+                    nombre: nameCurrentUser,
+                    lastSignInTime: lastSignInTime,
+                    rol: 'user'
+                }
+
+
+                await db.collection('usuariosvaca')
+                        .doc(uidCurrentUser)
+                        .set(usuario)
+                        .then(function() {
+                            console.log("Document successfully written!");   
+                        }).catch(function () {
+                            console.log("Document not success");
+                        });
+
+                  //  acces for document on BD
+                let doc = await db.collection('usuariosvaca')
+                                .doc(uidCurrentUser)
+                                .get()
+                                console.log(doc);
+                if(doc.exists){
+                    console.log('Exits');
+                    let usuario = doc.data()
+                    this.$emit('onIngresar', usuario)
+                }else{
+                    this.enviarNotificacion('No se encontró la información del usuario', 'Error')
+                }
+
+                storage.ref('usuariosvaca/'+uidCurrentUser+'/photo.jpg')
                 let task = storage.put(photoCurrentUser)
                 console.log("task: "+task);
             }
