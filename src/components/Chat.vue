@@ -19,7 +19,7 @@
                             </v-list-item-avatar>
 
                             <v-list-item-content>
-                                <v-list-item-title v-html="usuario.nombre" class="monster-font"></v-list-item-title>
+                                <v-text-area v-html="usuario.nombre" class="monster-font"></v-text-area>
                                 <v-list-item-subtitle v-html="usuario.ultimoMensaje"></v-list-item-subtitle>
                               
                             </v-list-item-content>

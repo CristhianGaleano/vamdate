@@ -19,8 +19,8 @@
         </v-avatar>
         <span class="ml-1
          monster-font">{{ usuario.nombre }}</span>
-        <!-- <v-btn class="monster-font ml-4" small  @click="callLogout" >Salir</v-btn> -->
-        <v-btn class="monster-font ml-4" small  @click="usuario = null">Salir</v-btn>
+        <v-btn class="monster-font ml-4" small  @click="callLogout" >Salir</v-btn>
+        <!-- <v-btn class="monster-font ml-4" small  @click="usuario = null">Salir</v-btn> -->
       </v-layout>
 
     </v-app-bar>

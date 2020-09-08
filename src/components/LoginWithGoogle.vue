@@ -65,7 +65,7 @@ vida y la formación académica, requiere del soporte y acompañamiento de los p
                         <v-alert border="top" colored-border type="info" elevation="2">
                             <b> Horario de atención:</b> <br> 
                             Lunes a viernes de 8:00 a.m a 12:00 m. y 2:00 p.m. a 6:00 p.m <br>
-                            Sábados: 8:00 a.m. a 12:00 m. <br> Zona horararia: UTC-5
+                            Sábados: 8:00 a.m. a 12:00 m. <br> Zona horaria: UTC-5
                         </v-alert>
                     </div>
                     </v-layout>
