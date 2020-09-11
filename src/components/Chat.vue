@@ -92,62 +92,40 @@
                 </v-toolbar>
                 <v-list two-line class="pa-0 ma-0  overflow-y-auto" id="scroll-target" style="max-height: 640px">
                     
-                    <v-expansion-panels hover accordion>
+                   <v-expansion-panels focusable hover tile> 
                         <v-expansion-panel >
-                        <v-expansion-panel-header  style="background: #079d5b69 none repeat scroll 0% 0%;
-color: white;">F. de Arquitectura y Diseño</v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Sheyen Muñoz - <a href="https://api.whatsapp.com/send?phone=573217094635"  target="_blank" title="Escríbenos"><span class="group pa-2">
-        <v-icon>fab fa-whatsapp</v-icon>
-      </span>3217094635</a>
-                            
-                        </v-expansion-panel-content>
+                                <v-expansion-panel-header  style="">
+                                    F. de Arquitectura y Diseño
+                                </v-expansion-panel-header>
+                                <v-expansion-panel-content>
+                                    Sheyen Muñoz - <a href="https://wa.me/573217094635?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2">
+                                    <v-icon>fab fa-whatsapp</v-icon>
+                                    </span>3217094635</a>
+                                </v-expansion-panel-content>
                         </v-expansion-panel>
-                    </v-expansion-panels>
-                    <v-expansion-panels hover accordion>
                         <v-expansion-panel >
-                        <v-expansion-panel-header style="background: #079d5b69 none repeat scroll 0% 0%;
-color: white;">F. de Ciencias Básicas e Ingeniería</v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Alexander Ramirez - <a href="https://api.whatsapp.com/send?phone=573138019791"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3138019791</a>
-                        </v-expansion-panel-content>
+                            <v-expansion-panel-header style="">F. de Ciencias Básicas e Ingeniería</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                Alexander Ramirez - <a href="https://wa.me/573138019791?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3138019791</a>
+                            </v-expansion-panel-content>
                         </v-expansion-panel>
-                    </v-expansion-panels>
-                    <v-expansion-panels hover accordion>
                         <v-expansion-panel >
-                        <v-expansion-panel-header style="background: #079d5b69 none repeat scroll 0% 0%;
-color: white;">F. de Ciencias Económicas y Administrativas</v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Francy Molano - <a href="https://api.whatsapp.com/send?phone=573046591874"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3046591874</a>
-                        </v-expansion-panel-content>
+                            <v-expansion-panel-header style="">F. de Ciencias Económicas y Administrativas</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                Francy Molano - <a href="https://wa.me/573046591874?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3046591874</a>
+                            </v-expansion-panel-content>
                         </v-expansion-panel>
-                    </v-expansion-panels>
-                    <v-expansion-panels hover accordion>
                         <v-expansion-panel >
-                        <v-expansion-panel-header style="background: #079d5b69 none repeat scroll 0% 0%;
-color: white;">F. de Ciencias Humanas, Sociales y de la Educación</v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Juana Gallego - <a href="https://api.whatsapp.com/send?phone=573137912319"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137912319</a>
-                        </v-expansion-panel-content>
+                            <v-expansion-panel-header style="">F. de Ciencias Humanas, Sociales y de la Educación</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                Juana Gallego - <a href="https://wa.me/573137912319?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137912319</a>
+                            </v-expansion-panel-content>
                         </v-expansion-panel>
-                    </v-expansion-panels>
-
-                    <!-- <v-expansion-panels hover accordion>
                         <v-expansion-panel >
-                        <v-expansion-panel-header style="background: #079d5b69 none repeat scroll 0% 0%;
-color: white;">Recepción</v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Danis Mosquera - Recepción
-                        </v-expansion-panel-content>
-                        </v-expansion-panel>
-                    </v-expansion-panels> -->
-                    <v-expansion-panels hover accordion>
-                        <v-expansion-panel >
-                        <v-expansion-panel-header style="background: #079d5b69 none repeat scroll 0% 0%;
-color: white;">Gestión Financiera</v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Margarita Mira - <a href="https://api.whatsapp.com/send?phone=573137371184"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137371184</a>
-                        </v-expansion-panel-content>
+                            <v-expansion-panel-header style="">Gestión Financiera</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                Margarita Mira - <a href="https://wa.me/573137371184?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137371184</a>
+                            </v-expansion-panel-content>
                         </v-expansion-panel>
                     </v-expansion-panels>
                 </v-list>
