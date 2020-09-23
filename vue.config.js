@@ -1,6 +1,6 @@
 module.exports = {
   "transpileDependencies": [
     "vuetify"
-  ]
-    // publicPath: "https://www.ucp.edu.co/apps/vamdate/",
+  ],
+    publicPath: "https://www.ucp.edu.co/apps/vamdate/",
 }

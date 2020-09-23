@@ -121,10 +121,10 @@
                                 Juana Gallego - <a href="https://wa.me/573137912319?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137912319</a>
                             </v-expansion-panel-content>
                         </v-expansion-panel>
-                        <v-expansion-panel >
+                         <v-expansion-panel >
                             <v-expansion-panel-header style="">Gestión Financiera</v-expansion-panel-header>
                             <v-expansion-panel-content>
-                                Margarita Mira - <a href="https://wa.me/573137371184?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137371184</a>
+                                Marisel Ceballos - <a href="https://wa.me/573137371184?text=Hola!%20dejanos%20tu%20solicitud%20"  target="_blank" title="Escríbenos"><span class="group pa-2"><v-icon>fab fa-whatsapp</v-icon></span>3137371184</a>
                             </v-expansion-panel-content>
                         </v-expansion-panel>
                     </v-expansion-panels>
@@ -152,7 +152,8 @@ export default {
             enviandoMensaje: false,
             cid: null,
             detenerChat: null,
-            height: 0
+            height: 0,
+            audio:  new Audio('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')
         }
     },
     computed: {
@@ -294,6 +295,7 @@ export default {
                              case 'added':
                                 usuario.cantidadMensajes++
                                 usuario.ultimoMensaje = mensaje.texto
+                                this.audio.play()
                              break
 
                              case 'removed':
