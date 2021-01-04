@@ -54,7 +54,14 @@
                                     <span class="ml-3" monster-font>{{ usuarioSeleccionado.nombre }}</span>
                                    
                                 </v-toolbar-title>
+                              
                             </v-toolbar>
+                              <v-list-item>
+                                  <v-list-item-content color="#f9f9f9">
+                                      <v-text-area style="font-size: .8rem; color: #B4B3B2;">Su solicitud sera atendida en orden de llegada, sino obtiene una respuesta en los siguientes minutos nuestro asesor dara respuesta en un termino no mayor a 24 horas</v-text-area>
+                                  </v-list-item-content>
+                              </v-list-item>
+                            
                             <v-container ref="chatContainer" class="pa-0 ma-0 scroll-y overflow-y-auto" id="scroll-target" style="max-height: 640px">
                                <v-card-text>
 
