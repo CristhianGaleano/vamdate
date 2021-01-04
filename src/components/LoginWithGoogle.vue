@@ -64,23 +64,23 @@ vida y la formación académica, requiere del soporte y acompañamiento de los p
                          <div>
                         <v-alert border="top" colored-border type="info" elevation="2">
                             <b> Horario de atención:</b> <br> 
-                            <p>Retornaremos la atención al público a través de este medio desde el 18 de enero de 2021</p>
+                            <!-- <p>Retornaremos la atención al público a través de este medio desde el 18 de enero de 2021</p>
                             <p>En su lugar puede realizar consultas en la línea de WhatsApp </p>
                             <a href="https://wa.me/573013877446?text=Hola!%20quisiera%20más%20información...%20"  target="_blank" title="Escríbenos"><span class="group pa-2">
                                     <v-icon>fab fa-whatsapp</v-icon>
-                                    </span>3013877446</a>
-                            <!-- Lunes a viernes de 8:00 a.m a 12:00 m. y 2:00 p.m. a 6:00 p.m <br>
-                            Sábados: 8:00 a.m. a 12:00 m. <br> Zona horaria: UTC-5 -->
+                                    </span>3013877446</a> -->
+                            Lunes a viernes de 8:00 a.m a 12:00 m. y 2:00 p.m. a 6:00 p.m <br>
+                            Sábados: 8:00 a.m. a 12:00 m. <br> Zona horaria: UTC-5
                         </v-alert>
                     </div>
                     </v-layout>
                     <v-layout justify-end>
-                        <v-btn @click="ingresar" disabled class="mx-2" style="text-transform: none;" color="infoPublicidad">
+                        <v-btn @click="ingresar"  class="mx-2" style="text-transform: none;" color="infoPublicidad">
                              <v-icon class="mx-2" style="color: #fbbc05;">fab fa-google</v-icon>
                             Inicia sesión con Google</v-btn>
                     </v-layout>
                     <v-layout justify-end mt-3>
-                        <v-btn class="mx-2" outline disabled flat style="text-transform: none;" @click="ingresarF" color="infoPublicidad">
+                        <v-btn class="mx-2" outline  flat style="text-transform: none;" @click="ingresarF" color="infoPublicidad">
                             <v-icon class="mx-2" style="color: #385898;">fab fa-facebook</v-icon>
                             Inicia sesión con Facebook</v-btn>
                     </v-layout>

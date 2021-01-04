@@ -1,6 +1,6 @@
 <template>
     <v-layout v-resize="onResize" justify-space-between row>
-         <v-flex xs-12 sm5 md5 lg3 class="usuarios" v-if="mostrarLista">
+         <v-flex xs-12 sm5 md3 class="usuarios" v-if="mostrarLista">
             <v-card>
                 <v-toolbar color="primary"  dark dense>
                     <v-toolbar-title>
@@ -40,7 +40,7 @@
                 </v-list>
             </v-card>
          </v-flex>
-         <v-flex xs12 sm5 md3 lg5 v-if="mostrarChat">
+         <v-flex xs12 sm5 md5 v-if="mostrarChat">
              <v-container fill-height class="pa-0 ma-0" >
                <v-layout align-end>
                      <v-flex>
